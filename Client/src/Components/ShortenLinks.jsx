@@ -62,6 +62,10 @@ const ShortenLinks = () => {
             Paste URL to be shortened
           </h1>
 
+          <p className="text-white text-lg sm:text-xl mt-4 font-semibold  bg-opacity-20 p-3 rounded-md border-l-4 border-yellow-400">
+            ⚠️ Note: Backend is deployed on Render's free tier. It may take up to 50 seconds to respond if the server is spun down.
+          </p>
+
           <div className="flex items-center mt-4 justify-center">
             <input
               className="border px-3 w-full rounded-sm h-12 bg-white"
