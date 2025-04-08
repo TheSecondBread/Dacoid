@@ -4,10 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signin from "./Components/Signin";
 import Signup from "./Components/Signup";
 import AnalyticsDashboard from "./Components/AnalyticsDashboard";
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <div className="h-[100vh] bg-[#fafafa]">
       <Navbar></Navbar>
+      <Analytics></Analytics>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ShortenLinks />}></Route>
