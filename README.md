@@ -4,8 +4,7 @@ A full-stack Micro-SaaS application that allows users to create shortened URLs a
 
 ## Live Demo
 
-Frontend: https://your-frontend-url.vercel.app  
-Backend API: https://your-backend-url.onrender.com
+Live: https://dacoid-psi.vercel.app/
 
 > Test Credentials  
 **Email:** intern@dacoid.com  
