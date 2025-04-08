@@ -21,7 +21,7 @@ const AnalyticsDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/url/user", {
+        const response = await fetch("https://dacoid-nhb5.onrender.com/api/url/user", {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${Cookies.get("jwt")}`,
@@ -100,8 +100,8 @@ const AnalyticsDashboard = () => {
                 className="text-center border-t border-gray-700 hover:bg-gray-700 transition"
               >
                 <td className="px-4 py-2">{row.originalUrl}</td>
-                <a className="px-4 py-2 text-blue-400" href={`http://localhost:8000/api/url/r/${row.shortUrl}`}>
-                  http://localhost:8000/api/url/r/{row.shortUrl}
+                <a className="px-4 py-2 text-blue-400" href={`https://dacoid-nhb5.onrender.com/api/url/r/${row.shortUrl}`}>
+                  https://dacoid-nhb5.onrender.com/api/url/r/{row.shortUrl}
                 </a>
                 <td className="px-4 py-2">{row.totalClicks}</td>
                 <td className="px-4 py-2">{row.createdDate}</td>
